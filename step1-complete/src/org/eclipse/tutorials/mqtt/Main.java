@@ -56,7 +56,7 @@ public class Main {
 				}
 			});
 			mqttClient.connect();
-			mqttClient.subscribe("greenhouse/LIVE/benjamin-bbb/data/#", 1);
+			mqttClient.subscribe("javaonedemo/eclipse-greenhouse/sensors/#", 1);
 
 		} catch (MqttException e) {
 			e.printStackTrace();

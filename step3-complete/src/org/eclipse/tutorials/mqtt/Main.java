@@ -101,10 +101,8 @@ public class Main extends Application {
 				}
 			});
 			mqttClient.connect();
-			mqttClient
-					.subscribe(
-							"javaonedemo/eclipse-greenhouse-ben/sensors/temperature",
-							1);
+			mqttClient.subscribe(
+					"javaonedemo/eclipse-greenhouse/sensors/temperature", 1);
 
 		} catch (MqttException e) {
 			// TODO Auto-generated catch block

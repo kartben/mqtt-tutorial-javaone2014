@@ -136,7 +136,7 @@ public class Main {
 					try {
 						mqttClient
 								.subscribe(
-										"javaonedemo/eclipse-greenhouse-ben/sensors/temperature",
+										"javaonedemo/eclipse-greenhouse/sensors/temperature",
 										1);
 					} catch (MqttException e) {
 						System.out.println("Connection failed: ");
